@@ -171,6 +171,7 @@ public class RadialSprite implements Drawable {
 	
 	@Override
 	public void draw(SpriteBatch batch, float x, float y, float width, float height) {
+		setColor(batch.getColor());
 		draw(batch, x, y, width, height, this.angle);
 	}
 
